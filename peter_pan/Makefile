@@ -1,4 +1,4 @@
-.PHONY: clean clean_all default
+.PHONY: clean clean_all default view
 
 JOBNAME = peter_pan
 
@@ -12,3 +12,6 @@ clean:
 
 clean_all:
 	latexmk -xelatex -auxdir=aux -outdir=out -jobname=${JOBNAME} -C master.tex
+
+view:
+    xdg-open out/${JOBNAME}.pdf
