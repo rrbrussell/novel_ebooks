@@ -14,4 +14,4 @@ clean_all:
 	latexmk -xelatex -auxdir=aux -outdir=out -jobname=${JOBNAME} -C master.tex
 
 view:
-    xdg-open out/${JOBNAME}.pdf
+	xdg-open out/${JOBNAME}.pdf
