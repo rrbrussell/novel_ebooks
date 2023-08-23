@@ -1,0 +1,32 @@
+\documentclass[letterpaper,12pt]{book}
+\usepackage{geometry}
+\geometry{lmargin=.5in,
+    rmargin=.5in,
+    tmargin=.5in,
+    bmargin=.5in,
+    twoside,
+    paperwidth=6in,
+    paperheight=8in}
+\usepackage{fontspec}
+\setmainfont{Antykwa Torunska}
+\usepackage[realheight]{lettrine}
+\renewcommand{\LettrineTextFont}{\rmfamily}
+\usepackage{hyperref}
+\hypersetup{pdftitle={Peter Pan},
+	pdfauthor={James Matthew Barrie},
+	pdfcreator={Robert R. Russell},
+	bookmarksnumbered=true,
+	bookmarks=true,
+	bookmarksopen=true,
+	bookmarksopenlevel=1,
+	pdfstartview=FitH,
+	pdfview=FitH,
+	pdfpagemode=UseOutlines,
+	colorlinks=false}
+\usepackage{subfiles}
+\begin{document}
+\frontmatter
+\input{front_matter}
+\mainmatter{}
+\input{chapter_01}
+\end{document}
