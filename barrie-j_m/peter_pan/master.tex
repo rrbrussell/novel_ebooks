@@ -1,0 +1,50 @@
+\documentclass[letterpaper,12pt]{book}
+\usepackage{geometry}
+\geometry{lmargin=.5in, rmargin=.5in, tmargin=.5in, bmargin=.5in, twoside, paperwidth=6in, paperheight=8in,}
+\usepackage{fontspec}
+\setmainfont{Antykwa Torunska}
+\usepackage[realheight]{lettrine}
+\renewcommand{\LettrineTextFont}{\rmfamily}
+\usepackage{hyperref}
+\hypersetup{
+	pdftitle={Peter Pan},
+	pdfauthor={James Matthew Barrie},
+	pdfcreator={Robert R. Russell},
+	bookmarksnumbered=true,
+	bookmarks=true,
+	bookmarksopen=true,
+	bookmarksopenlevel=1,
+	pdfstartview=FitH,
+	pdfview=FitH,
+	pdfpagemode=UseOutlines,
+	colorlinks=false
+}
+\usepackage{subfiles}
+
+\begin{document}
+\frontmatter
+\title{Peter Pan}
+\author{James Matthew Barrie}
+\date{1911}
+\pdfbookmark{Title Page}{title}
+\maketitle
+\tableofcontents
+\mainmatter{}
+\input{chapter_01}
+\input{chapter_02}
+\input{chapter_03}
+\input{chapter_04}
+\input{chapter_05}
+\input{chapter_06}
+\input{chapter_07}
+\input{chapter_08}
+\input{chapter_09}
+\input{chapter_10}
+\input{chapter_11}
+\input{chapter_12}
+\input{chapter_13}
+\input{chapter_14}
+\input{chapter_15}
+\input{chapter_16}
+\input{chapter_17}
+\end{document}
