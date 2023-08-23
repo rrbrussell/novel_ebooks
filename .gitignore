@@ -45,6 +45,7 @@
 latex.out/
 # latexmk
 aux/
+out/
 
 ## Auxiliary and intermediate files from other packages:
 # algorithms
