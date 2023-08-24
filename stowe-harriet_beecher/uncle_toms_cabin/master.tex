@@ -1,9 +1,9 @@
-\documentclass[letterpaper,12pt]{book}
+\documentclass[letterpaper,10pt]{book}
 \usepackage{geometry}
 \geometry{lmargin=.5in,
     rmargin=.5in,
-    tmargin=.5in,
-    bmargin=.5in,
+    vmargin=1in,
+    headheight=15pt,
     twoside,
     paperwidth=6in,
     paperheight=8in}
@@ -24,9 +24,42 @@
 	pdfpagemode=UseOutlines,
 	colorlinks=false}
 \usepackage{subfiles}
+\usepackage{titlesec}
+\titleformat
+{\chapter}
+[display]
+{\scshape\Large}
+{\centering Chapter \Roman{chapter}}
+{0.5ex}
+{\centering}
+\titlespacing{\chapter}{0pt}{-5ex}{1ex}
+
+\usepackage{fancyhdr}
+
+\makeatletter
+\def\cleardoublepage{\clearpage\if@twoside \ifodd\c@page\else
+\begingroup
+\mbox{}
+\thispagestyle{empty}
+\newpage
+\if@twocolumn\mbox{}\newpage\fi
+\endgroup\fi\fi}
+\makeatother
+
+
 \begin{document}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhf[OHC]{\scshape Negro Life In America.}
+\fancyhf[OHR]{\thepage}
+\fancyhf[EHC]{\scshape Uncle Tom's Cabin; Or,}
+\fancyhf[EHL]{\thepage}
+\fancypagestyle{plain}{}
 \frontmatter
+\pagestyle{fancy}
 \input{front_matter}
 \mainmatter{}
+\pagestyle{fancy}
 \input{chapter_01}
+\input{chapter_02}
 \end{document}
